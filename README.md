@@ -1,7 +1,7 @@
 # ScreenEdgePanGesture
 ###### 详细列举屏幕边缘侧滑手势的各种使用场景及常见问题的解决方法
 
-![image](https://github.com/splsylp/ScreenEdgePanGesture/blob/master/ScreenEdgePanGesture.gif)
+![image](https://github.com/splsylp/ScreenEdgePanGesture/blob/master/screenEdgePanGesture.gif)
 
 ##### 注意：项目运行后，侧滑返回偶现的导航栏标题水平位置偏移、抖动、文字变淡等问题是由模拟器所导致，真机下是没有问题的！！！
 

@@ -1,0 +1,2 @@
+# ScreenEdgePanGesture
+详细列举屏幕边缘侧滑手势的各种使用场景及常见问题的解决方法

@@ -25,19 +25,26 @@ class H1Controller: UIViewController {
         view.backgroundColor = UIColor.white
         navigationItem.title = "H1"
         
+        var topY: CGFloat = 20
+        var navH: CGFloat = 64
+        if SCREEN_HEIGHT == 812 {
+            topY = 44
+            navH = 88
+        }
+        
         // 自定义导航栏视图
-        let navView = UIView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64))
+        let navView = UIView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: navH))
         navView.backgroundColor = UIColor.black
         view.addSubview(navView)
         
         // 导航栏返回按钮
         let backBtn = BackButton(target: self, action: #selector(backBtnClicked))
-        backBtn.x = 18
-        backBtn.centerY = navView.centerY + 10
+        backBtn.x = 20
+        backBtn.centerY = topY + (navH - topY) / 2.0
         navView.addSubview(backBtn)
         
         // 导航栏标题
-        let titleLabel = UILabel(frame: CGRect(x: 0, y: 20, width: SCREEN_WIDTH, height: 44))
+        let titleLabel = UILabel(frame: CGRect(x: 0, y: topY, width: SCREEN_WIDTH, height: navH - topY))
         titleLabel.text = "H1"
         titleLabel.textColor = UIColor.white
         titleLabel.textAlignment = .center
